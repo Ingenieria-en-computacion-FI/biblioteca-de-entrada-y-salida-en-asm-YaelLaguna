@@ -8,8 +8,10 @@ newline:
     push ebp
     mov ebp, esp
 
-    ; TODO:
+    ;Cargamos \n en el AL
+    mov al, 10
     ; imprimir '\n'
+    call print_char 
 
     mov esp, ebp
     pop ebp
