@@ -13,9 +13,22 @@ print_string:
     push ebp
     mov ebp, esp
 
-    ; TODO:
-    ; 1. calcular longitud
-    ; 2. syscall write
+    mov esi, eax
+    mov ecx, eax
+    xor edx, edx
+
+.count:
+    cmp byte [ecx], 0
+    je .print
+    inc ecx
+    inc edx
+    jmp .count
+
+.print:
+    mov eax, 4
+    mov ebx, 1
+    mov ecx, esi
+    int 0x80
 
     mov esp, ebp
     pop ebp
