@@ -13,10 +13,17 @@ scan_string:
     push ebp
     mov ebp, esp
 
-    ; TODO:
-    ; 1. syscall read
-    ; 2. guardar en buffer
-    ; 3. agregar terminador 0
+    mov ecx, eax
+    mov edx, ebx
+
+    mov eax, 3
+    mov ebx, 0
+    int 0x80
+
+    mov ecx, eax
+    add ecx, [ebp+8]
+    dec ecx
+    mov byte [ecx], 0
 
     mov esp, ebp
     pop ebp
