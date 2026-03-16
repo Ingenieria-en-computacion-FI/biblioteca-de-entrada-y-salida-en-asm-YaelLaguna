@@ -1,6 +1,8 @@
 SECTION .text
 global print_char
 
+;Yael Xanthe Laguna Eslava
+
 ; ---------------------------------
 ; print_char
 ; Entrada:

@@ -1,6 +1,8 @@
 SECTION .bss
 char_buffer resb 1
 
+;Yael Xanthe Laguna Eslava
+
 SECTION .text
 global scan_char
 

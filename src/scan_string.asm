@@ -1,6 +1,8 @@
 SECTION .text
 global scan_string
 
+;Yael Xanthe Laguna ßEslava
+
 ; ---------------------------------
 ; scan_string
 ; Entrada:

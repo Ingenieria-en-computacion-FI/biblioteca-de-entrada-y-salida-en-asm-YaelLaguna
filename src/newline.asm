@@ -1,6 +1,8 @@
 extern print_char
 global newline
 
+;Yael Xanthe Laguna Eslava 
+
 SECTION .text
 
 newline:
